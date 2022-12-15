@@ -40,6 +40,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +68,7 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(544, 450);
+            this.dataGridView1.Size = new System.Drawing.Size(544, 553);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
@@ -109,9 +113,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("微软雅黑", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(622, 140);
+            this.button1.Location = new System.Drawing.Point(647, 356);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 57);
+            this.button1.Size = new System.Drawing.Size(147, 57);
             this.button1.TabIndex = 2;
             this.button1.Text = "借阅本书";
             this.button1.UseVisualStyleBackColor = true;
@@ -120,9 +124,9 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("微软雅黑", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(622, 242);
+            this.button2.Location = new System.Drawing.Point(647, 450);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 57);
+            this.button2.Size = new System.Drawing.Size(147, 57);
             this.button2.TabIndex = 3;
             this.button2.Text = "返回";
             this.button2.UseVisualStyleBackColor = true;
@@ -147,11 +151,53 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "label2";
             // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("宋体", 12F);
+            this.textBox2.Location = new System.Drawing.Point(564, 192);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(135, 30);
+            this.textBox2.TabIndex = 12;
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("楷体", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button6.Location = new System.Drawing.Point(728, 190);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(135, 31);
+            this.button6.TabIndex = 10;
+            this.button6.Text = "书名查找";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("宋体", 12F);
+            this.textBox3.Location = new System.Drawing.Point(564, 264);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(135, 30);
+            this.textBox3.TabIndex = 14;
+            // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("楷体", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button7.Location = new System.Drawing.Point(728, 262);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(135, 31);
+            this.button7.TabIndex = 13;
+            this.button7.Text = "按作者查找";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // checkBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(880, 553);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
@@ -180,5 +226,9 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button7;
     }
 }

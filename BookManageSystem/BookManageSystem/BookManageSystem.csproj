@@ -90,6 +90,12 @@
     <Compile Include="addBook.Designer.cs">
       <DependentUpon>addBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,8 +148,17 @@
     <Compile Include="UserBookManage.Designer.cs">
       <DependentUpon>UserBookManage.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManage.Designer.cs">
+      <DependentUpon>UserManage.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="addBook.resx">
       <DependentUpon>addBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
@@ -177,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserBookManage.resx">
       <DependentUpon>UserBookManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManage.resx">
+      <DependentUpon>UserManage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

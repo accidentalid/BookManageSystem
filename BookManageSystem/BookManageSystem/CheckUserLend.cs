@@ -22,20 +22,41 @@ namespace BookManageSystem
         {
             dataGridView1.Rows.Clear(); //清空已存在的书籍信息
             DBLink dblink = new DBLink();
-            string sql = "select * from t_borrow;";
+            string sql = "select [no],user_id,book_id,[date] from t_borrow;";
             IDataReader dc = dblink.read(sql);
-            string a0, a1, a2, a3, a4; //对应每一列的值
+            string a0, a1, a2, a3; //对应每一列的值
             while (dc.Read())
             {
                 a0 = dc[0].ToString();
                 a1 = dc[1].ToString();
                 a2 = dc[2].ToString();
                 a3 = dc[3].ToString();
-                a4 = dc[4].ToString();
+                //a4 = dc[4].ToString();
 
-                string[] table = { a0, a1, a2, a3, a4 };
+                string[] table = { a0, a1, a2, a3 };
                 dataGridView1.Rows.Add(table);
-                //dataGridView1.Rows.Add(dc[0].ToString(), dc[1].ToString(), dc[2].ToString(), dc[3].ToString(), dc[4].ToString(), dc[5].ToString());
+            }
+            dc.Close();
+            dblink.Close();
+        }
+        //按读者查询
+        public void tableByUser()
+        {
+            dataGridView1.Rows.Clear(); //清空已存在的书籍信息
+            DBLink dblink = new DBLink();
+            string sql = $"select [no],user_id,book_id,[date] from t_borrow where user_id='{textBox2.Text}';";
+            IDataReader dc = dblink.read(sql);
+            string a0, a1, a2, a3; //对应每一列的值
+            while (dc.Read())
+            {
+                a0 = dc[0].ToString();
+                a1 = dc[1].ToString();
+                a2 = dc[2].ToString();
+                a3 = dc[3].ToString();
+                //a4 = dc[4].ToString();
+
+                string[] table = { a0, a1, a2, a3 };
+                dataGridView1.Rows.Add(table);
             }
             dc.Close();
             dblink.Close();
@@ -48,6 +69,22 @@ namespace BookManageSystem
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            tableByUser();
+            textBox2.Text = "";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            tableShow();
         }
     }
 }

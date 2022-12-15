@@ -87,5 +87,67 @@ namespace BookManageSystem
         {
             this.Close();
         }
+
+        //书名查询引用,模糊查询
+        public void tableByName()
+        {
+            dataGridView1.Rows.Clear(); //清空已存在的书籍信息
+            DBLink dblink = new DBLink();
+            string sql = $"select * from t_book where book_name like '%{textBox2.Text}%';";
+            IDataReader dc = dblink.read(sql);
+            string a0, a1, a2, a3, a4, a5; //对应每一列的值
+            while (dc.Read())
+            {
+                a0 = dc[0].ToString();
+                a1 = dc[1].ToString();
+                a2 = dc[2].ToString();
+                a3 = dc[3].ToString();
+                a4 = dc[4].ToString();
+                a5 = dc[5].ToString();
+                string[] table = { a0, a1, a2, a3, a4, a5 };
+                dataGridView1.Rows.Add(table);
+            }
+            dc.Close();
+            dblink.Close();
+        }
+        //按作者查询
+        public void tableByAuthor()
+        {
+            dataGridView1.Rows.Clear(); //清空已存在的书籍信息
+            DBLink dblink = new DBLink();
+            string sql = $"select * from t_book where author like '%{textBox3.Text}%';";
+            IDataReader dc = dblink.read(sql);
+            string a0, a1, a2, a3, a4, a5; //对应每一列的值
+            while (dc.Read())
+            {
+                a0 = dc[0].ToString();
+                a1 = dc[1].ToString();
+                a2 = dc[2].ToString();
+                a3 = dc[3].ToString();
+                a4 = dc[4].ToString();
+                a5 = dc[5].ToString();
+                string[] table = { a0, a1, a2, a3, a4, a5 };
+                dataGridView1.Rows.Add(table);
+            }
+            dc.Close();
+            dblink.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e) //书名查找
+        {
+            tableByName();
+            textBox2.Text = "";
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            tableByAuthor();
+            textBox3.Text = "";
+        }
     }
 }

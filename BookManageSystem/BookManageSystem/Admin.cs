@@ -68,5 +68,21 @@ namespace BookManageSystem
         {
             this.Close();
         }
+
+        private void 用户管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserManage um=new UserManage();
+            this.Hide();
+            um.ShowDialog();
+            this.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            UserManage um = new UserManage();
+            this.Hide();
+            um.ShowDialog();
+            this.Show();
+        }
     }
 }

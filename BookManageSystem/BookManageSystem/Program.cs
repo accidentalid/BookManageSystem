@@ -16,11 +16,13 @@ namespace BookManageSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            //Application.Run(new Login());
             //Application.Run(new addBook());
             //Application.Run(new Admin());
             //Application.Run(new BookManage());
             //Application.Run(new checkBook());
+            Application.Run(new CheckUserLend());
+            //Application.Run(new UserManage());
         }
     }
 }
