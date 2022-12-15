@@ -213,24 +213,33 @@ namespace BookManageSystem
 
         private void button8_Click(object sender, EventArgs e)
         {
-            int n = dataGridView1.SelectedRows.Count; //获取选择行数
-            string sql = $"delete from t_book where book_id in(";
-            for(int i = 0; i < n; i++)
-            {
-                sql += $"'{dataGridView1.SelectedRows[i].Cells[0].Value.ToString()}',";
+            try {
+                DialogResult dr = MessageBox.Show("是否确认删除？", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if (dr == DialogResult.OK)
+                {
+                    int n = dataGridView1.SelectedRows.Count; //获取选择行数
+                    string sql = $"delete from t_book where book_id in(";
+                    for (int i = 0; i < n; i++)
+                    {
+                        sql += $"'{dataGridView1.SelectedRows[i].Cells[0].Value.ToString()}',";
+                    }
+                    sql = sql.Remove(sql.Length - 1);
+                    sql += ")";
+                    DBLink dblink = new DBLink();
+                    if (dblink.Execute(sql) > n - 1)
+                    {
+                        MessageBox.Show($"批量删除图书信息成功!\n成功删除{n}条信息");
+                        tableShow();
+                    }
+                    else
+                    {
+                        MessageBox.Show("图书信息删除失败！\n请检查书籍数据");
+                    }
+                }
             }
-            sql = sql.Remove(sql.Length - 1);
-            sql += ")";
-            MessageBox.Show(sql);
-            DBLink dblink = new DBLink();
-            if (dblink.Execute(sql) > n - 1)
+            catch
             {
-                MessageBox.Show($"批量删除图书信息成功!\n成功删除{n}条信息");
-                tableShow();
-            }
-            else
-            {
-                MessageBox.Show("图书信息删除失败！\n请检查书籍数据");
+                MessageBox.Show("未选择图书!无法执行删除操作！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

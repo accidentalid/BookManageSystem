@@ -43,7 +43,7 @@
 
 ### 管理员界面
 
-![image-20221215213346505](C:/Users/39081/AppData/Roaming/Typora/typora-user-images/image-20221215213346505.png)
+![](https://my-typoraimage.oss-cn-hangzhou.aliyuncs.com/img/20221215230327.png)
 
 ### 书籍管理
 
@@ -55,4 +55,8 @@
 
 ### 查看用户借阅
 
-![image-20221215213538742](https://my-typoraimage.oss-cn-hangzhou.aliyuncs.com/img/image-20221215213538742.png)
+![](https://my-typoraimage.oss-cn-hangzhou.aliyuncs.com/img/20221215230250.png)
+
+### 用户管理
+
+![](https://my-typoraimage.oss-cn-hangzhou.aliyuncs.com/img/20221215230234.png)
