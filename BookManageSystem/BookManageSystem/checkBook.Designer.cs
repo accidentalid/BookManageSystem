@@ -154,7 +154,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox2.Location = new System.Drawing.Point(564, 192);
+            this.textBox2.Location = new System.Drawing.Point(569, 123);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(135, 30);
             this.textBox2.TabIndex = 12;
@@ -162,7 +162,7 @@
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("楷体", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button6.Location = new System.Drawing.Point(728, 190);
+            this.button6.Location = new System.Drawing.Point(733, 121);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(135, 31);
             this.button6.TabIndex = 10;
@@ -173,7 +173,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox3.Location = new System.Drawing.Point(564, 264);
+            this.textBox3.Location = new System.Drawing.Point(569, 195);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(135, 30);
             this.textBox3.TabIndex = 14;
@@ -181,7 +181,7 @@
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("楷体", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button7.Location = new System.Drawing.Point(728, 262);
+            this.button7.Location = new System.Drawing.Point(733, 193);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(135, 31);
             this.button7.TabIndex = 13;

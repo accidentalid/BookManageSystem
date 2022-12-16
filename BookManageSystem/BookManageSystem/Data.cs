@@ -9,5 +9,6 @@ namespace BookManageSystem
     internal class Data
     {
         public static string UID = " ", UName = " ";//登陆用户的id与姓名
+        public static string U_request = "";
     }
 }

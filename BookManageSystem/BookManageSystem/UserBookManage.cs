@@ -19,9 +19,9 @@ namespace BookManageSystem
         }
         public void tableShow()
         {
-            dataGridView1.Rows.Clear(); //清空已存在的书籍信息
+            dataGridView1.Rows.Clear(); //清空已存在的用户信息
             DBLink dblink = new DBLink();
-            string sql = $"select [no],book_id,book_name,[date] from t_borrow where user_id='{Data.UID}';";
+            string sql = $"select [no],book_id,book_name,[date] from View_borrow_user where user_id='{Data.UID}';";
             IDataReader dc = dblink.read(sql);
             string a0, a1, a2, a3; //对应每一列的值
             while (dc.Read())
