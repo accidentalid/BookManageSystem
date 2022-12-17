@@ -134,6 +134,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrderManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderManage.Designer.cs">
+      <DependentUpon>OrderManage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recharge.cs">
@@ -160,6 +166,12 @@
     <Compile Include="UserManage.Designer.cs">
       <DependentUpon>UserManage.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserOrder.Designer.cs">
+      <DependentUpon>UserOrder.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="addBook.resx">
       <DependentUpon>addBook.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,6 +196,9 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OrderManage.resx">
+      <DependentUpon>OrderManage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -204,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserManage.resx">
       <DependentUpon>UserManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserOrder.resx">
+      <DependentUpon>UserOrder.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

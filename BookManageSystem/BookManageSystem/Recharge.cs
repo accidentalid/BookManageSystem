@@ -54,5 +54,14 @@ namespace BookManageSystem
         {
             this.Close();
         }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //如果输入的不是退格和数字，则屏蔽输入
+            if (!(e.KeyChar == '\b' || (e.KeyChar >= '0' && e.KeyChar <= '9')))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

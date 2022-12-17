@@ -40,6 +40,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.购买订单管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +52,7 @@
             this.系统ToolStripMenuItem,
             this.书籍管理ToolStripMenuItem,
             this.CheckUserLend,
+            this.购买订单管理ToolStripMenuItem,
             this.用户管理ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -113,20 +116,20 @@
             this.button1.Font = new System.Drawing.Font("微软雅黑", 13.91597F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.Location = new System.Drawing.Point(51, 266);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 66);
+            this.button1.Size = new System.Drawing.Size(132, 66);
             this.button1.TabIndex = 3;
-            this.button1.Text = "书籍信息管理";
+            this.button1.Text = "书籍管理";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("微软雅黑", 13.91597F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(303, 266);
+            this.button2.Location = new System.Drawing.Point(242, 266);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(222, 66);
+            this.button2.Size = new System.Drawing.Size(144, 66);
             this.button2.TabIndex = 4;
-            this.button2.Text = "查看用户借阅信息";
+            this.button2.Text = "借阅信息";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -144,13 +147,31 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("微软雅黑", 13.91597F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.Location = new System.Drawing.Point(604, 266);
+            this.button4.Location = new System.Drawing.Point(624, 266);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(168, 66);
+            this.button4.Size = new System.Drawing.Size(148, 66);
             this.button4.TabIndex = 6;
             this.button4.Text = "用户管理";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("微软雅黑", 13.91597F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button5.Location = new System.Drawing.Point(435, 266);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(148, 66);
+            this.button5.TabIndex = 7;
+            this.button5.Text = "订单管理";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // 购买订单管理ToolStripMenuItem
+            // 
+            this.购买订单管理ToolStripMenuItem.Name = "购买订单管理ToolStripMenuItem";
+            this.购买订单管理ToolStripMenuItem.Size = new System.Drawing.Size(113, 24);
+            this.购买订单管理ToolStripMenuItem.Text = "购买订单管理";
+            this.购买订单管理ToolStripMenuItem.Click += new System.EventHandler(this.购买订单管理ToolStripMenuItem_Click);
             // 
             // Admin
             // 
@@ -159,6 +180,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -191,5 +213,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ToolStripMenuItem 用户管理ToolStripMenuItem;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ToolStripMenuItem 购买订单管理ToolStripMenuItem;
+        private System.Windows.Forms.Button button5;
     }
 }

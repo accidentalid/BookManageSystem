@@ -75,5 +75,13 @@ namespace BookManageSystem
             Recharge rc = new Recharge();
             rc.ShowDialog();
         }
+
+        private void 我的订单ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserOrder userOrder = new UserOrder();
+            this.Hide();
+            userOrder.ShowDialog();
+            this.Show();
+        }
     }
 }

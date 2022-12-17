@@ -45,7 +45,7 @@ namespace BookManageSystem
 
         private void 系统ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("图书管理系统\nversion:1.0");
+            MessageBox.Show("图书管理系统\nversion:1.2");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -82,6 +82,22 @@ namespace BookManageSystem
             UserManage um = new UserManage();
             this.Hide();
             um.ShowDialog();
+            this.Show();
+        }
+
+        private void 购买订单管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OrderManage orderManage = new OrderManage();
+            this.Hide();
+            orderManage.ShowDialog();
+            this.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            OrderManage orderManage = new OrderManage();
+            this.Hide();
+            orderManage.ShowDialog();
             this.Show();
         }
     }

@@ -35,11 +35,12 @@
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.书籍管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.我的ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.我的订单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.账户充值ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.账户充值ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +51,7 @@
             this.系统ToolStripMenuItem,
             this.书籍管理ToolStripMenuItem,
             this.我的ToolStripMenuItem,
+            this.我的订单ToolStripMenuItem,
             this.账户充值ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -90,9 +92,23 @@
             // 我的ToolStripMenuItem
             // 
             this.我的ToolStripMenuItem.Name = "我的ToolStripMenuItem";
-            this.我的ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
-            this.我的ToolStripMenuItem.Text = "我的";
+            this.我的ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.我的ToolStripMenuItem.Text = "我的借阅";
             this.我的ToolStripMenuItem.Click += new System.EventHandler(this.我的ToolStripMenuItem_Click);
+            // 
+            // 我的订单ToolStripMenuItem
+            // 
+            this.我的订单ToolStripMenuItem.Name = "我的订单ToolStripMenuItem";
+            this.我的订单ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.我的订单ToolStripMenuItem.Text = "我的订单";
+            this.我的订单ToolStripMenuItem.Click += new System.EventHandler(this.我的订单ToolStripMenuItem_Click);
+            // 
+            // 账户充值ToolStripMenuItem
+            // 
+            this.账户充值ToolStripMenuItem.Name = "账户充值ToolStripMenuItem";
+            this.账户充值ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.账户充值ToolStripMenuItem.Text = "账户充值";
+            this.账户充值ToolStripMenuItem.Click += new System.EventHandler(this.账户充值ToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -138,13 +154,6 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // 账户充值ToolStripMenuItem
-            // 
-            this.账户充值ToolStripMenuItem.Name = "账户充值ToolStripMenuItem";
-            this.账户充值ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
-            this.账户充值ToolStripMenuItem.Text = "账户充值";
-            this.账户充值ToolStripMenuItem.Click += new System.EventHandler(this.账户充值ToolStripMenuItem_Click);
-            // 
             // User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -182,5 +191,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ToolStripMenuItem 账户充值ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 我的订单ToolStripMenuItem;
     }
 }

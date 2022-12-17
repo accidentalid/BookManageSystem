@@ -52,5 +52,37 @@ namespace BookManageSystem
             textBox4.Text = "";
             textBox5.Text = "";
         }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e) //限制id为纯数字
+        {
+            //如果输入的不是退格和数字，则屏蔽输入
+            if (!(e.KeyChar == '\b' || (e.KeyChar >= '0' && e.KeyChar <= '9')))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_KeyPress(object sender, KeyPressEventArgs e) //限制输入金额为纯数字
+        {
+            //如果输入的不是退格和数字，则屏蔽输入
+            if (!(e.KeyChar == '\b' || (e.KeyChar >= '0' && e.KeyChar <= '9')))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //如果输入的不是男/女性，则屏蔽输入
+            if (!(e.KeyChar == '\b' || (e.KeyChar == '男' || e.KeyChar == '女')))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
