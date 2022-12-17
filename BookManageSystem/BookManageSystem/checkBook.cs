@@ -54,6 +54,11 @@ namespace BookManageSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (Data.MaxLend>=5)
+            {
+                MessageBox.Show("当前书籍借阅数量达到/超出上限，已限制借阅\n请及时归还借阅书籍");
+                return;
+            }
             string id = dataGridView1.SelectedRows[0].Cells[0].Value.ToString(); //获得要借阅的书籍号
             string book_name=dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
             int number = int.Parse(dataGridView1.SelectedRows[0].Cells[5].Value.ToString()); //获取库存数

@@ -17,6 +17,8 @@ namespace BookManageSystem
             InitializeComponent();
             tableShow();
         }
+        
+        
         public void tableShow()
         {
             dataGridView1.Rows.Clear(); //清空已存在的用户信息
@@ -35,7 +37,9 @@ namespace BookManageSystem
             }
             dc.Close();
             dblink.Close();
+            
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             string no = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
