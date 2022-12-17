@@ -2,7 +2,7 @@
 
 namespace BookManageSystem
 {
-    internal class DBLink
+    internal class DBLink //用于连接数据库
     {
         SqlConnection con;
         public SqlConnection connect()
