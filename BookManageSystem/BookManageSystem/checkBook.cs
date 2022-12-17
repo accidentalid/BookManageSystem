@@ -62,7 +62,7 @@ namespace BookManageSystem
             }
             else
             {
-                string sql = $"insert into t_borrow(user_id,book_id,book_name,[date]) values('{Data.UID}','{id}','{book_name}',getdate());update t_book set number=number-1 where book_id='{id}'" ;
+                string sql = $"insert into t_borrow(user_id,book_id,[date]) values('{Data.UID}','{id}',getdate());update t_book set number=number-1 where book_id='{id}'" ;
                 DBLink dblink=new DBLink();
                 if (dblink.Execute(sql) > 1) //执行了两条语句
                 {
