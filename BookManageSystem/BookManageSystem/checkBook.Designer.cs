@@ -44,6 +44,9 @@
             this.button6 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,7 +116,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("微软雅黑", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(647, 356);
+            this.button1.Location = new System.Drawing.Point(649, 397);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(147, 57);
             this.button1.TabIndex = 2;
@@ -124,7 +127,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("微软雅黑", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(647, 450);
+            this.button2.Location = new System.Drawing.Point(649, 477);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(147, 57);
             this.button2.TabIndex = 3;
@@ -189,11 +192,44 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("微软雅黑", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button3.Location = new System.Drawing.Point(649, 319);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(147, 57);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "购买本书";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("微软雅黑", 10.28571F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Location = new System.Drawing.Point(590, 260);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 23);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "当前余额：";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(691, 268);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 15);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "label4";
+            // 
             // checkBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(880, 553);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.textBox2);
@@ -230,5 +266,8 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

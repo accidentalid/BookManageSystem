@@ -69,5 +69,11 @@ namespace BookManageSystem
         {
             this.Hide();
         }
+
+        private void 账户充值ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Recharge rc = new Recharge();
+            rc.ShowDialog();
+        }
     }
 }

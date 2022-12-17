@@ -24,6 +24,7 @@ namespace BookManageSystem
             //Application.Run(new CheckUserLend());
             //Application.Run(new UserManage());
             //Application.Run(new UserBookManage());
+            //Application.Run(new AddUser());
         }
     }
 }

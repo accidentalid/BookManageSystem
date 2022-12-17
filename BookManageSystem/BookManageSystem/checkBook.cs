@@ -49,6 +49,7 @@ namespace BookManageSystem
         private void checkBook_Load(object sender, EventArgs e)
         {
             label2.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString() + dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            label4.Text = Data.UMoney.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -148,6 +149,35 @@ namespace BookManageSystem
         {
             tableByAuthor();
             textBox3.Text = "";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string id = dataGridView1.SelectedRows[0].Cells[0].Value.ToString(); //获得要购买的书籍号
+            string book_name = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            int number = int.Parse(dataGridView1.SelectedRows[0].Cells[5].Value.ToString()); //获取库存数
+            int price = int.Parse(dataGridView1.SelectedRows[0].Cells[4].Value.ToString());//获取售价
+            if (number < 1)
+            {
+                MessageBox.Show("当前库内已无此书，请联系管理员获取帮助");
+                return;
+            }
+            if (price > Data.UMoney) //余额不足时
+            {
+                MessageBox.Show("账户内余额不足，请充值后进行购买");
+            }
+            else
+            {
+                string sql = $"insert into t_order(user_id,book_id,[date]) values('{Data.UID}','{id}',getdate());update t_user set poket={Data.UMoney-price} where user_id='{Data.UID}';update t_book set number=number-1 where book_id='{id}'";
+                DBLink dblink = new DBLink();
+                if (dblink.Execute(sql) > 2) //执行了三条语句
+                {
+                    MessageBox.Show($"用户：{Data.UName}  购买图书《{book_name}》成功");
+                    tableShow();
+                }
+                Data.UMoney -= price;
+                label4.Text = Data.UMoney.ToString();
+            }
         }
     }
 }

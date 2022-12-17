@@ -19,10 +19,10 @@ namespace BookManageSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != null && textBox2.Text != null && textBox3.Text != null && textBox4.Text != null)
+            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != ""&& textBox5.Text!="")
             {
                 DBLink dblink = new DBLink();
-                string sql = $"insert into t_user values('{textBox1.Text}','{textBox2.Text}','{textBox3.Text}','{textBox4.Text}')";
+                string sql = $"insert into t_user values('{textBox1.Text}','{textBox2.Text}','{textBox3.Text}','{textBox4.Text}','{textBox5.Text}')";
                 int n = dblink.Execute(sql);
                 if (n > 0)
                 {
@@ -36,6 +36,7 @@ namespace BookManageSystem
                 textBox2.Text = "";
                 textBox3.Text = "";
                 textBox4.Text = "";
+                textBox5.Text = "";
             }
             else
             {
@@ -49,6 +50,7 @@ namespace BookManageSystem
             textBox2.Text = "";
             textBox3.Text = "";
             textBox4.Text = "";
+            textBox5.Text = "";
         }
     }
 }

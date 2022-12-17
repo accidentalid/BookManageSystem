@@ -28,15 +28,16 @@ namespace BookManageSystem
             DBLink dblink = new DBLink();
             string sql = "select * from t_user;";
             IDataReader dc = dblink.read(sql);
-            string a0, a1, a2, a3; //对应每一列的值
+            string a0, a1, a2, a3, a4; //对应每一列的值
             while (dc.Read())
             {
                 a0 = dc[0].ToString();
                 a1 = dc[1].ToString();
                 a2 = dc[2].ToString();
-                //a3 = dc[3].ToString();
+                a3 = dc[3].ToString();
+                a4 = dc[4].ToString();
 
-                string[] table = { a0, a1, a2};
+                string[] table = { a0, a1, a2, a4};
                 dataGridView1.Rows.Add(table);
                 //dataGridView1.Rows.Add(dc[0].ToString(), dc[1].ToString(), dc[2].ToString(), dc[3].ToString(), dc[4].ToString(), dc[5].ToString());
             }
@@ -83,6 +84,11 @@ namespace BookManageSystem
             {
                 MessageBox.Show("未选择用户!无法执行删除操作！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

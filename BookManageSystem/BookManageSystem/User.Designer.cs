@@ -39,6 +39,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.账户充值ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,10 +49,11 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.系统ToolStripMenuItem,
             this.书籍管理ToolStripMenuItem,
-            this.我的ToolStripMenuItem});
+            this.我的ToolStripMenuItem,
+            this.账户充值ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(748, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(748, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -61,7 +63,7 @@
             this.帮助ToolStripMenuItem,
             this.退出ToolStripMenuItem});
             this.系统ToolStripMenuItem.Name = "系统ToolStripMenuItem";
-            this.系统ToolStripMenuItem.Size = new System.Drawing.Size(53, 26);
+            this.系统ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.系统ToolStripMenuItem.Text = "系统";
             // 
             // 帮助ToolStripMenuItem
@@ -81,14 +83,14 @@
             // 书籍管理ToolStripMenuItem
             // 
             this.书籍管理ToolStripMenuItem.Name = "书籍管理ToolStripMenuItem";
-            this.书籍管理ToolStripMenuItem.Size = new System.Drawing.Size(53, 26);
+            this.书籍管理ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.书籍管理ToolStripMenuItem.Text = "书籍";
             this.书籍管理ToolStripMenuItem.Click += new System.EventHandler(this.书籍管理ToolStripMenuItem_Click);
             // 
             // 我的ToolStripMenuItem
             // 
             this.我的ToolStripMenuItem.Name = "我的ToolStripMenuItem";
-            this.我的ToolStripMenuItem.Size = new System.Drawing.Size(53, 26);
+            this.我的ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.我的ToolStripMenuItem.Text = "我的";
             this.我的ToolStripMenuItem.Click += new System.EventHandler(this.我的ToolStripMenuItem_Click);
             // 
@@ -110,7 +112,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(137, 50);
             this.button1.TabIndex = 2;
-            this.button1.Text = "书籍借阅";
+            this.button1.Text = "借阅/购买";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -135,6 +137,13 @@
             this.button3.Text = "退出账户";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // 账户充值ToolStripMenuItem
+            // 
+            this.账户充值ToolStripMenuItem.Name = "账户充值ToolStripMenuItem";
+            this.账户充值ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.账户充值ToolStripMenuItem.Text = "账户充值";
+            this.账户充值ToolStripMenuItem.Click += new System.EventHandler(this.账户充值ToolStripMenuItem_Click);
             // 
             // User
             // 
@@ -172,5 +181,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ToolStripMenuItem 账户充值ToolStripMenuItem;
     }
 }

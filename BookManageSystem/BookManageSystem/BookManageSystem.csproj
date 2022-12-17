@@ -136,6 +136,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recharge.Designer.cs">
+      <DependentUpon>Recharge.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +193,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Recharge.resx">
+      <DependentUpon>Recharge.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>
     </EmbeddedResource>

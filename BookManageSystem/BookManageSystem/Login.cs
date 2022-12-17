@@ -56,6 +56,7 @@ namespace BookManageSystem
                 {
                     Data.UID = dc["user_id"].ToString();
                     Data.UName= dc["name"].ToString();
+                    Data.UMoney = (int)dc["poket"];
 
                     MessageBox.Show("登录成功！");
                     //跳转新窗体
