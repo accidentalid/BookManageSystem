@@ -59,5 +59,42 @@ namespace BookManageSystem
         {
 
         }
+
+        private void textBox_id_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_id_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //如果输入的不是退格和数字，则屏蔽输入
+            if (!(e.KeyChar == '\b' || (e.KeyChar >= '0' && e.KeyChar <= '9')))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox_price_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //如果输入的不是退格和数字，则屏蔽输入
+            if (!(e.KeyChar == '\b' || (e.KeyChar >= '0' && e.KeyChar <= '9')))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox_num_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_num_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //如果输入的不是退格和数字，则屏蔽输入
+            if (!(e.KeyChar == '\b' || (e.KeyChar >= '0' && e.KeyChar <= '9')))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

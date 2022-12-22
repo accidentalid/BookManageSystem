@@ -84,5 +84,10 @@ namespace BookManageSystem
                 e.Handled = true;
             }
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -62,6 +62,8 @@
             this.textBox_id.Name = "textBox_id";
             this.textBox_id.Size = new System.Drawing.Size(261, 27);
             this.textBox_id.TabIndex = 1;
+            this.textBox_id.TextChanged += new System.EventHandler(this.textBox_id_TextChanged);
+            this.textBox_id.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_id_KeyPress);
             // 
             // textBox_name
             // 
@@ -124,6 +126,7 @@
             this.textBox_price.Name = "textBox_price";
             this.textBox_price.Size = new System.Drawing.Size(261, 27);
             this.textBox_price.TabIndex = 9;
+            this.textBox_price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_price_KeyPress);
             // 
             // label_price
             // 
@@ -142,6 +145,8 @@
             this.textBox_num.Name = "textBox_num";
             this.textBox_num.Size = new System.Drawing.Size(261, 27);
             this.textBox_num.TabIndex = 11;
+            this.textBox_num.TextChanged += new System.EventHandler(this.textBox_num_TextChanged);
+            this.textBox_num.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_num_KeyPress);
             // 
             // label_num
             // 
